@@ -9,12 +9,10 @@ use Symfony\Component\Routing\Annotation\Route;
 class BonjourController extends AbstractController
 {
     /**
-     * @Route("/bonjour", name="bonjour")
+     * @Route("/hello", name="hello")
      */
     public function index(): Response
     {
-        return $this->render('bonjour/index.html.twig', [
-            'controller_name' => 'BonjourController',
-        ]);
+        return $this->render('bonjour/index.html.twig');
     }
 }
